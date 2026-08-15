@@ -1,0 +1,10 @@
+site_name: pytest-fixturize
+site_description: This plugin is intended to provide arbitrary attributes as `pytest` fixtures.
+site_author: Nikita Antonenkov
+
+theme: readthedocs
+
+repo_url: https://github.com/krigar1184/pytest-fixturize
+
+pages:
+- Home: index.md
