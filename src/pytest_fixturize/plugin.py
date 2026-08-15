@@ -1,7 +1,7 @@
 import pytest
 
 
-def pytest_addoption(parser):
+def pytest_addoption(parser: pytest.Parser):
     group = parser.getgroup('fixturize')
     group.addoption(
         '--foo',
