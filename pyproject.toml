@@ -7,7 +7,7 @@ name = "pytest-fixturize"
 description = "This plugin is intended to provide arbitrary attributes as `pytest` fixtures."
 version = "0.1.0"
 readme = "README.rst"
-requires-python = ">=3.10"
+requires-python = ">=3.10, <4.0"
 authors = [{ name = "Nikita Antonenkov", email = "krigar1184@gmail.com" }]
 maintainers = [{ name = "Nikita Antonenkov", email = "krigar1184@gmail.com" }]
 license = { file = "LICENSE" }
@@ -29,12 +29,12 @@ classifiers = [
   "License :: OSI Approved :: MIT License",
 ]
 dependencies = ["pytest>=6.2.0"]
+
 [project.urls]
-Repository = "https://github.com/krigar1184/pytest-fixturize"
+repository = "https://github.com/krigar1184/pytest-fixturize"
+
 [project.entry-points.pytest11]
-fixturize = "pytest_fixturize.plugin"
+pytest_fixturize = "pytest_fixturize.plugin"
 
 [dependency-groups]
-dev = [
-    "tox (>=4.60.0,<5.0.0)"
-]
+dev = ["tox (>=4.60.0,<5.0.0)", "pudb (>=2025.1.5,<2026.0.0)", "pdbpp (>=0.12.1,<0.13.0)"]
